@@ -5,13 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Be vietnam Pro",sans-serif;
-    background-color: rgb(23, 22, 22);
+    scroll-behavior: smooth;
+    /* background-color: rgb(23, 22, 22); */
+    
 }
 
 #wrapper{
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: rgb(23, 22, 22);
 }
 .container{
     margin:0 auto;
@@ -185,16 +188,17 @@ a{
         font-weight: bold;
         align-items: center;
         text-align: center; 
+        padding-top: 60px;
         }
-        .ab{
-            width: 100%;
-            height: 500px;
-            
-        }
+    .ab{
+        width: 100%;
+        height: 500px;
+        
+    }
     .about-page{
         position: relative;
         justify-content: space-around;
-        color:white;
+        color:rgb(155, 172, 177);
         display: flex;
         margin-top: 50px;
         height: 3rem;
@@ -219,14 +223,10 @@ a{
         flex-direction: column;
         gap: 3px;
     }
-    /* p{
-        height: 8rem;
-        padding: 19px;
-    } */
+    
     .role1,.role2,.role3{
         height: 8rem;
         width: 100%;
-        /* padding: 19px; */
         
     }
     h2{
@@ -265,4 +265,99 @@ a{
             background-position: right center; /* Move to the right */
         }
     } 
+    .temp{
+        width: 100%;
+        height: 500px;
+        border: 3px;
+        border-color: beige;
+        color: antiquewhite;
+        margin-top: 40px;
+    }
+    .project-header{
+        color: white;
+        font-weight: bold;
+        align-items: center;
+        text-align: center; 
+        margin-top: 3px;
+    }
+    .project-container {
+        color: white;
+        margin-top: 25px;
+        height: 650px;
+        gap: 4px;
+        /* border: 3px solid beige; 
+        border-radius: 8px;  */
+        padding: 1rem; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 14px;
+    }
+    
+    .upper, .lower {
+        height: 50%;
+        width: 100%;
+        /* border: 3px solid beige;  */
+        /* border-radius: 8px;  */
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        justify-content: space-evenly;
+    }
+    
+    .project-card {
+        position: relative;
+        height: 265px;
+        width: 370px;
+        /* border: 1px solid beige;  */
+        border-radius: 8px;
+        margin: 4px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .project-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        transition: left 0.3s ease;
+        z-index: 1;
+        box-shadow: 10px 10px 10px 10px rgba(209, 192, 192, 0.5); /* Border shadow */
+        border-radius: inherit;
+    }
+    
+    .project-card:hover::before {
+        left: 0;
+    }
+    
+    .project-card:hover {
+        transform: scale(1.05);
+        z-index: 2;
+        box-shadow: 10px 10px 10px rgba(209, 192, 192, 0.5); /* Border shadow */
+        border-radius: 5px;
+    }
+    
+    #project2 {
+        background-image: url("./images/project-images/portImage.png");
+    }
+    
+    .project-content {
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+    }
     
