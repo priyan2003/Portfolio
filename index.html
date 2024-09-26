@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-    
     <div id="wrapper">
-
+        <div class="navmain">
             <div class="navbar">
-                
                 <div class="logo-container">
                     <!-- we will add a logo -->
                     <img src="./images/logos/pwithwhite.jpg" alt="" class="logo">
                     <div class="logo-text">riyanshu</div>
                 </div>
-
                 <div class="nav-items">
                     <div><a href="#home">Home</a></div>
                     <div><a href="#about">About</a></div>
@@ -26,142 +24,138 @@
                     <div><a href="#contactme">Contact Me</a></div>
                 </div>
             </div>
-           <div class="main">
-            <div class="home-page" >
+        </div>
+        <div class="main" id="home">
+            <div class="home-page">
                 <div class="home-page-left">
                     <div class="home-page-heading">Hi!! Priyanshu</div>
-    
                     <div class="home-page-subheading">
                         I am a <span class="role"></span>
                     </div>
-    
                     <div class="home-page-description">
                         I am a Web Developer and here is my portfolio website. Here you'll
                         learn about my journey as a developer. 
                     </div>
                     <div class="btn-pink" id="btn-pink">Resume</div>
                 </div>
-     
                 <div class="home-page-right">
                     <img src="./images/profile/profile.jpg" alt="" class="profile">
                 </div>
             </div>
-
-           </div>
-            <div class="ab" id="about">
-                <div class="about-me" >
-                    <h1 class="about-start">About Me</h1>
-                </div> 
-                <div class="about-page">
-                    <div class="about-page-left">
-                        <div class="summary">
-                            I am Priyanshu, a B.Tech 3rd year student from IIIT Bhagalpur, passionate about web development. Starting from scratch, I have developed strong skills in creating dynamic and responsive websites. My dedication to continuous learning and problem-solving drives me to build efficient and innovative web solutions. I am proficient in HTML, CSS, JavaScript, and various web development frameworks. I enjoy collaborating with cross-functional teams and tackling challenging projects that push the boundaries of my knowledge. With a keen eye for detail and a commitment to quality, I strive to deliver exceptional user experiences and contribute to impactful digital projects.
-                            <br />
-                            <br />
-                            Thank you for taking the time to learn about me. I'm eager to connect with like-minded individuals, collaborate on exciting projects, and contribute to the evolving landscape of web development. Let's create something remarkable together!
+        </div>
+        <div class="ab" id="about">
+            <div class="about-me">
+                <h1 class="about-start">About Me</h1>
+            </div> 
+            <div class="about-page">
+                <div class="about-page-left">
+                    <div class="summary">
+                        I am Priyanshu, a B.Tech 3rd year student from IIIT Bhagalpur, passionate about web development. Starting from scratch, I have developed strong skills in creating dynamic and responsive websites. My dedication to continuous learning and problem-solving drives me to build efficient and innovative web solutions. I am proficient in HTML, CSS, JavaScript, and various web development frameworks. I enjoy collaborating with cross-functional teams and tackling challenging projects that push the boundaries of my knowledge. With a keen eye for detail and a commitment to quality, I strive to deliver exceptional user experiences and contribute to impactful digital projects.
+                        <br />
+                        <br />
+                        Thank you for taking the time to learn about me. I'm eager to connect with like-minded individuals, collaborate on exciting projects, and contribute to the evolving landscape of web development. Let's create something remarkable together!
+                    </div>
+                </div>
+                <div class="about-page-right">
+                    <div class="role1">
+                        <h2>Backend Developer</h2>
+                        <p>I am a passionate and dedicated Backend Developer with experience in building robust and scalable server-side applications.</p>
+                    </div>
+                    <div class="role2">
+                        <h2>Frontend Developer</h2>
+                        <p>As a Frontend Developer, I specialize in crafting visually appealing and user-friendly web interfaces. My role involves translating design mockups into responsive, interactive, and accessible web applications.</p>
+                    </div>
+                    <div class="role3">
+                        <h2>Programmer</h2>
+                        <p>Proficient programmer with expertise in logic-building and problem-solving, developing robust software solutions and optimizing performance, while ensuring seamless user experiences through collaboration and innovative approaches.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="temp" id="project">
+            <div class="project-header">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-page">
+                <div class="project-container">
+                    <div class="upper">
+                        <div class="project-card" id="project1">
+                            <div class="project-content">
+                                <h2 class="project-heading">Application1</h2>
+                                <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam?</div>
+                                <div class="button-grp">
+                                    <button class="btn-project">
+                                        <a href="" class="live">Preview</a>
+                                    </button>
+                                    <a href="">
+                                        <i class="fa fa-github" title="GitHub"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" id="project2">
+                            <div class="project-content">
+                                <h2 class="project-heading">Application2</h2>
+                                <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam?</div>
+                                <div class="button-grp">
+                                    <button class="btn-project">
+                                        <a href="" class="live">Preview</a>
+                                    </button>
+                                    <a href="">
+                                        <i class="fa fa-github" title="GitHub"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="about-page-right">
-                        <div class="role1">
-                            <h2>Backend Developer</h2>
-                            <p>I am a passionate and dedicated Backend Developer with experience in building robust and scalable server-side applications.
-                            </p>
+                    <div class="lower">
+                        <div class="project-card" id="project3">
+                            <div class="project-content">
+                                <h2 class="project-heading">Application3</h2>
+                                <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam?</div>
+                                <div class="button-grp">
+                                    <button class="btn-project">
+                                        <a href="" class="live">Preview</a>
+                                    </button>
+                                    <a href="">
+                                        <i class="fa fa-github" title="GitHub"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                        <div class="project-card" id="project4">
+                            <div class="project-content">
+                                <h2 class="project-heading">Application4</h2>
+                                <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam?</div>
+                                <div class="button-grp">
+                                    <button class="btn-project">
+                                        <a href="" class="live">Preview</a>
+                                    </button>
+                                    <a href="">
+                                        <i class="fa fa-github" title="GitHub"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skillmain">
+             <div class="skill-header">
+                <h1>Skills</h1>
+             </div>
+             <div class="skill-page">
+                <div class="skill-container">
+                    <div class="skill-left">
+
+                    </div>
+                    <div class="skill-right">
                         
-                        <div class="role2">
-                            <h2>Frontend Developer</h2>
-                            <p>As a Frontend Developer, I specialize in crafting visually appealing and user-friendly web interfaces. My role involves translating design mockups into responsive, interactive, and accessible web applications.
-                            </p>
-                        </div>
-
-                        <div class="role3">
-                            <h2>Programmer</h2>
-                            <p>Proficient programmer with expertise in logic-building and problem-solving, developing robust software solutions and optimizing performance, while ensuring seamless user experiences through collaboration and innovative approaches.
-                            </p>
-                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="temp">
-                <div class="project-header" id="project">
-                    <h1>Projects</h1>
-                </div>
-                <div class="project-page">
-                    <div class="project-container">
-                        <div class="upper">
-                            <div class="project-card" id="project1">
-                                <div class="project-content">
-                                    <h2 class="project-heading">Application1</h2>
-                                    <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam?</div>
-                                    <div class="button-grp">
-                                        <button class="btn-pink btn-project">
-                                            <a href="">Live</a>
-                                        </button>
-                                        <button class="btn-pink btn-project"></button>
-                                            <a href="">
-                                                <i title="GitHub"  class=""></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="project-card" id="project2">
-                                <div class="project-content">
-                                    <h2 class="project-heading">Application2</h2>
-                                    <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam?</div>
-                                    <div class="button-grp">
-                                        <button class="btn-pink btn-project">
-                                            <a href="">Live</a>
-                                        </button>
-                                        <button class="btn-pink btn-project"></button>
-                                            <a href="">
-                                                <i title="GitHub"  class=""></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="lower">
-                            <div class="project-card" id="project3">
-                                <div class="project-content">
-                                    <h2 class="project-heading">Application3</h2>
-                                    <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam?</div>
-                                    <div class="button-grp">
-                                        <button class="btn-pink btn-project">
-                                            <a href="">Live</a>
-                                        </button>
-                                        <button class="btn-pink btn-project"></button>
-                                            <a href="">
-                                                <i title="GitHub"  class=""></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-card" id="project4">
-                                <div class="project-content">
-                                    <h2 class="project-heading">Application4</h2>
-                                    <div class="project-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aperiam?</div>
-                                    <div class="button-grp">
-                                        <button class="btn-pink btn-project">
-                                            <a href="">Live</a>
-                                        </button>
-                                        <button class="btn-pink btn-project"></button>
-                                            <a href="">
-                                                <i title="GitHub"  class=""></i>
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
