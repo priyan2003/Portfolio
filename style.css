@@ -970,18 +970,80 @@ circle:nth-of-type(1) {
     /* border: 3px solid white; Add border on hover */
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
 }
-.footer{
+.footer {
     box-sizing: border-box;
     width: 100%;
-    height: 20rem;
-    /* border: 3px solid white; */
-    margin-top: 4rem;
+    height: 25rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1818;
+    color: white;
+    font-size: 1rem; /* Default font size */
 }
+
+.lgs {
+    display: flex;
+    height: 54px;
+    width: 300px;
+    margin-top: 14px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.logs{
+    transition: transform 0.3s ease;
+}
+.logs:hover {
+    transform: scale(1.2);
+}
+
+.lgs img {
+    width: 40px; /* Default icon size */
+    height: auto;
+}
+
+/* Media query for screens smaller than 768px (tablet and mobile) */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 0.875rem; /* Smaller font size */
+        height: 20rem; /* Adjust height if needed */
+    }
+
+    .lgs {
+        height: 45px; /* Slightly smaller height for icons container */
+        width: 250px; /* Slightly smaller width for icons container */
+    }
+
+    .lgs img {
+        width: 35px; /* Slightly larger icon size */
+    }
+}
+
+/* Media query for screens smaller than 480px (mobile) */
+@media (max-width: 480px) {
+    .footer {
+        font-size: 0.75rem; /* Even smaller font size */
+        height: 15rem; /* Adjust height if needed */
+    }
+
+    .lgs {
+        height: 40px; /* Slightly smaller height for icons container */
+        width: 200px; /* Slightly smaller width for icons container */
+    }
+
+    .lgs img {
+        width: 30px; /* Slightly larger icon size */
+    }
+}
+
+
 .contact-form h2{
     font-size: 40px;
     color: white;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .contact-form form{
     width: 600px;
