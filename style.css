@@ -330,14 +330,6 @@
     .home-page {
         gap: 5rem;
     }
-
-    .home-page-left {
-        /* width: 50%; */
-    }
-
-    .home-page-right {
-        /* width: 50%; */
-    }
 }
 
 /* Ensure no overlap between profile and left content */
