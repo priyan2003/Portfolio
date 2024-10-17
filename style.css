@@ -478,8 +478,8 @@ p {
 
 .project-card {
     position: relative;
-    height: 265px;
-    width: 370px;
+    height: 300px;
+    width: 400px;
     border-radius: 8px;
     margin: 4px;
     background-size: cover;
@@ -546,6 +546,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .btn-project:hover {
@@ -566,7 +567,7 @@ p {
     color: #333;
     background-color: white;
     padding: 2px;
-    border-radius: 10%;
+    border-radius: 8px;
     margin-left: 10px;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
