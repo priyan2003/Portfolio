@@ -474,6 +474,7 @@ p {
     gap: 35px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .project-card {
@@ -517,6 +518,7 @@ p {
 #project2 {
     background-image: url("./images/project-images/portImage.png");
 }
+
 
 .project-content {
     height: 100%;
