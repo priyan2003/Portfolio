@@ -479,7 +479,7 @@ p {
 .project-card {
     position: relative;
     height: 300px;
-    width: 400px;
+    width: 500px;
     border-radius: 8px;
     margin: 4px;
     background-size: cover;
@@ -540,7 +540,7 @@ p {
     height: 28px;
     width: 50px;
     border: 2px;
-    border-color: #ededf0;
+    /* border-color: #ededf0; */
     font-weight: 500;
     display: flex;
     flex-direction: row;
@@ -549,10 +549,7 @@ p {
     border-radius: 10px;
 }
 
-.btn-project:hover {
-    background-color: red;
-    color: black;
-}
+
 
 .button-grp {
     margin-left: 23px;
@@ -572,21 +569,25 @@ p {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.project-content .button-grp a:hover i.fa-github {
-    color: #000;
+/* .project-content .button-grp a:hover i.fa-github {
+    color: white;
     background-color: #f0f0f0;
-}
+} */
 
 .project-content .button-grp a.live {
     color: black;
     font-size: small;
     text-decoration: none;
 }
-
-.project-content .button-grp:hover a.live {
+.btn-project:hover {
+    color: white;
+    background-color: red;
+}
+ .btn-project:hover a.live {
     color: white;
     font-size: small;
 }
+
 
 @media only screen and (max-width: 768px) {
     .project-container {
