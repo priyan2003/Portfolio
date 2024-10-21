@@ -958,6 +958,7 @@ circle:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8px;
     justify-content: center;
     background-color: #060606;
     transition: box-shadow 0.3s ease, border 0.3s ease;
@@ -1034,29 +1035,28 @@ circle:nth-of-type(1) {
     }
 }
 
-
-.contact-form h2{
+.contact-form h2 {
     font-size: 40px;
     color: white;
     text-align: center;
     margin-bottom: 5px;
 }
-.contact-form form{
-    width: 600px;
+
+.contact-form form {
+    width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-form .input-box{
-    width: 100%;
-    gap: 35px;
-}
-form .input-box{
-    display: flex ;
-    justify-content: space-between;
+    margin: 0 auto;
 }
 
-.item {
+form .input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.field .item {
     width: 100%;
     padding: 18px;
     background: transparent;
@@ -1067,31 +1067,38 @@ form .input-box{
     color: #ededed;
     margin: 8px 0;
 }
-.field {
-    width: 50rem;
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
-.field .item::placeholder{
-    color: rgba(255,255,255,);
-}
-.field .error-txt{
+
+.field .error-txt {
     font-size: 10px;
     color: #d93025;
     text-align: left;
     margin: -5px 0 10px;
+    display: none;
 }
-.field.error .error-txt{
+
+.field.error .error-txt {
     display: block;
 }
-.field.error .item{
+
+.field.error .item {
     border-color: red;
 }
-.textarea-field{
-    width: 600px;
+/* .text.error input{
+    border-color: red;
+} */
+.textarea-field {
+    width: 100%;
 }
-form .textarea-field .error-txt{
+
+form .textarea-field .error-txt {
     margin-top: -10px;
 }
-.submit-btn{
+
+.submit-btn {
     width: 100px;
     height: 30px;
     padding: 5px;
@@ -1100,76 +1107,44 @@ form .textarea-field .error-txt{
     outline: none;
     border-radius: 6px;
     box-shadow: 0 0 10px #0ef;
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
 }
-.submit-btn:hover{
+
+.submit-btn:hover {
     cursor: pointer;
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
 /* Media Queries */
 
 /* For screens smaller than 1200px */
 @media (max-width: 1200px) {
-    .contact-form {
-        width: 80%;
-    }
     .contact-form form {
-        width: 500px;
-    }
-    .field {
-        width: 40rem;
-    }
-    .textarea-field {
-        width: 500px;
+        max-width: 500px;
     }
 }
 
 /* For screens smaller than 992px */
 @media (max-width: 992px) {
-    .contact-form {
-        width: 90%;
-    }
     .contact-form form {
-        width: 400px;
-    }
-    .field {
-        width: 30rem;
-    }
-    .textarea-field {
-        width: 400px;
+        max-width: 400px;
     }
 }
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
-    .contact-form {
-        width: 100%;
-    }
     .contact-form form {
-        width: 300px;
-    }
-    .field {
-        width: 20rem;
-    }
-    .textarea-field {
-        width: 300px;
+        max-width: 300px;
     }
 }
 
 /* For screens smaller than 480px */
 @media (max-width: 480px) {
     .contact-form {
-        height: 40rem;
+        height: auto;
     }
     .contact-form form {
-        width: 200px;
-    }
-    .field {
-        width: 15rem;
-    }
-    .textarea-field {
-        width: 200px;
+        max-width: 200px;
     }
     .submit-btn {
         width: 80px;
