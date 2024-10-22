@@ -950,7 +950,7 @@ circle:nth-of-type(1) {
 .contact-form{
     box-sizing: border-box;
     width: 72%;
-    height: 65rem;
+    height: 90rem;
     /* border: 3px solid white; */
     border-radius: 35px;
     box-shadow: 10px;
@@ -1087,9 +1087,7 @@ form .input-box {
 .field.error .item {
     border-color: red;
 }
-/* .text.error input{
-    border-color: red;
-} */
+
 .textarea-field {
     width: 100%;
 }
@@ -1122,6 +1120,9 @@ form .textarea-field .error-txt {
     .contact-form form {
         max-width: 500px;
     }
+    .contact-form h2 {
+        font-size: 35px;
+    }
 }
 
 /* For screens smaller than 992px */
@@ -1129,12 +1130,18 @@ form .textarea-field .error-txt {
     .contact-form form {
         max-width: 400px;
     }
+    .contact-form h2 {
+        font-size: 30px;
+    }
 }
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
     .contact-form form {
         max-width: 300px;
+    }
+    .contact-form h2 {
+        font-size: 25px;
     }
 }
 
@@ -1150,4 +1157,8 @@ form .textarea-field .error-txt {
         width: 80px;
         height: 25px;
     }
+    .contact-form h2 {
+        font-size: 20px;
+    }
 }
+
