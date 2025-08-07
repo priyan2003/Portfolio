@@ -525,11 +525,14 @@ p {
     border-radius: 30px;
 }
 
-#project2 {
-    background-image: url("./images/project-images/portImage.png");
-}
 #project1 {
+    background-image: url("./images/project-images/tutorgrid.png");
+}
+#project2 {
     background-image: url("./images/project-images/jobbridge.jpg");
+}
+#project3 {
+    background-image: url("./images/project-images/portImage.png");
 }
 
 
